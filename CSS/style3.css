@@ -5,3 +5,18 @@ td{
 body{
     background-color: #64e479;
 }
+
+.Mid{
+    text-align: center;
+}
+
+.Mid:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+    color:red;
+}
+td:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+    color:red;
+}
