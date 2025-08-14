@@ -18,7 +18,7 @@ Coding Grind is a collection of tutorials, code snippets, and guides for develop
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/coding-grind.git
+    git clone https://github.com/vnrbl0/coding-grind.git
     ```
 2. Explore the folders and files for resources and guides.
 
