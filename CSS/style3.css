@@ -26,23 +26,29 @@ td:hover {
     color: red;
 }
 
-span {
-    transition: transform 0.5s ease;
-    font-size: 20px;
-    display: inline-block;
+th:hover {
+    background-color: #f0f0f0;
     cursor: pointer;
+    color: red;
 }
-
-span:hover {
-    transform: scale(20);
-    animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-    from {
-        transform:scale(8) rotate(0deg);
+    span {
+        transition: transform 0.4s ease;
+        font-size: 20px;
+        display: inline-block;
+        cursor: pointer;
     }
-    to {
-        transform: scale(15) rotate(360deg);
+
+    span:hover {
+        transform: scale(20);
+        animation: spin 1.1s infinite linear;
     }
-}
+
+    @keyframes spin {
+        from {
+            transform: scale(5) rotate(0deg);
+        }
+
+        to {
+            transform: scale(20) rotate(360deg);
+        }
+    }
