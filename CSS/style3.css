@@ -1,24 +1,48 @@
-
-        td{
+th {
     border: 2px solid black;
 }
 
-body{
+td {
+    border: 2px solid black;
+}
+
+body {
     background-color: #64e479;
 }
 
-.Mid{
+.Mid {
     text-align: center;
 }
 
-.Mid:hover{
+.Mid:hover {
     background-color: #f0f0f0;
     cursor: pointer;
-    color:red;
+    color: red;
 }
-td:hover{
+
+td:hover {
     background-color: #f0f0f0;
     cursor: pointer;
-    color:red;
+    color: red;
 }
-       
+
+span {
+    transition: transform 0.5s ease;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+span:hover {
+    transform: scale(20);
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform:scale(8) rotate(0deg);
+    }
+    to {
+        transform: scale(15) rotate(360deg);
+    }
+}
