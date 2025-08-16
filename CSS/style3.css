@@ -53,3 +53,8 @@ span:hover {
         transform: scale(20) rotate(360deg);
     }
 }
+
+hr {
+    border: 1px solid red;
+    margin: 20px 0;
+}
