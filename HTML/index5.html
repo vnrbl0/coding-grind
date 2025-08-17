@@ -4,8 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inline & Blocks Elements in HTML</title>
+    <link rel="stylesheet" href="/CSS/style5.css">
 </head>
 <body>
+    <h2>HTML Elements: Inline vs Block</h2>
     
+    <p>Understanding the difference between inline and block elements is crucial for web development. Inline elements do not start on a new line and only take up as much width as necessary, while block elements start on a new line and take up the full width available.</p>
+    <table border="1" cellpadding="5" style="display:inline-block; vertical-align:top; margin-left:30px;">
+        <caption><strong>Element Work/Behavior</strong></caption>
+        <tr>
+            <th>Element</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <!-- Block Elements -->
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>Block</td>
+            <td>Generic container for flow content, starts on a new line.</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Block</td>
+            <td>Paragraph, separates text into blocks.</td>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; - &lt;h6&gt;</td>
+            <td>Block</td>
+            <td>Headings, define section titles, start on a new line.</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Block</td>
+            <td>Unordered list, groups list items.</td>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Block</td>
+            <td>Ordered list, groups list items in order.</td>
+        </tr>
+        <tr>
+            <td>&lt;li&gt;</td>
+            <td>Block</td>
+            <td>List item, used inside lists.</td>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Block</td>
+            <td>Table container for tabular data.</td>
+        </tr>
+        <tr>
+            <td>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</td>
+            <td>Block</td>
+            <td>Table sections for grouping rows.</td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Block</td>
+            <td>Table row.</td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt;, &lt;td&gt;</td>
+            <td>Block</td>
+            <td>Table header/data cell.</td>
+        </tr>
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>Block</td>
+            <td>Form container for user input.</td>
+        </tr>
+        <tr>
+            <td>&lt;header&gt;, &lt;footer&gt;, &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, &lt;main&gt;</td>
+            <td>Block</td>
+            <td>Semantic containers for page structure.</td>
+        </tr>
+        <tr>
+            <td>&lt;address&gt;</td>
+            <td>Block</td>
+            <td>Contact information.</td>
+        </tr>
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>Block</td>
+            <td>Section quoted from another source.</td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Block</td>
+            <td>Preformatted text, preserves whitespace.</td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Block</td>
+            <td>Horizontal rule, thematic break.</td>
+        </tr>
+        <!-- Inline Elements -->
+        <tr>
+            <td>&lt;span&gt;</td>
+            <td>Inline</td>
+            <td>Generic inline container.</td>
+        </tr>
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>Inline</td>
+            <td>Hyperlink.</td>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Inline</td>
+            <td>Embeds an image.</td>
+        </tr>
+        <tr>
+            <td>&lt;strong&gt;, &lt;b&gt;</td>
+            <td>Inline</td>
+            <td>Bold text (strong is semantic).</td>
+        </tr>
+        <tr>
+            <td>&lt;em&gt;, &lt;i&gt;</td>
+            <td>Inline</td>
+            <td>Italic text (em is semantic).</td>
+        </tr>
+        <tr>
+            <td>&lt;u&gt;</td>
+            <td>Inline</td>
+            <td>Underlined text.</td>
+        </tr>
+        <tr>
+            <td>&lt;small&gt;</td>
+            <td>Inline</td>
+            <td>Smaller text.</td>
+        </tr>
+        <tr>
+            <td>&lt;abbr&gt;</td>
+            <td>Inline</td>
+            <td>Abbreviation or acronym.</td>
+        </tr>
+        <tr>
+            <td>&lt;cite&gt;</td>
+            <td>Inline</td>
+            <td>Citation/reference.</td>
+        </tr>
+        <tr>
+            <td>&lt;code&gt;</td>
+            <td>Inline</td>
+            <td>Inline code snippet.</td>
+        </tr>
+        <tr>
+            <td>&lt;sub&gt;, &lt;sup&gt;</td>
+            <td>Inline</td>
+            <td>Subscript/superscript text.</td>
+        </tr>
+        <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Inline</td>
+            <td>Highlighted text.</td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>Inline</td>
+            <td>Line break.</td>
+        </tr>
+        <tr>
+            <td>&lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;button&gt;</td>
+            <td>Inline</td>
+            <td>Form controls.</td>
+        </tr>
+        <tr>
+            <td>&lt;q&gt;</td>
+            <td>Inline</td>
+            <td>Short inline quotation.</td>
+        </tr>
+        <tr>
+            <td>&lt;samp&gt;, &lt;kbd&gt;</td>
+            <td>Inline</td>
+            <td>Sample output/keyboard input.</td>
+        </tr>
+    </table>
 </body>
 </html>

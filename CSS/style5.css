@@ -1,0 +1,129 @@
+/* style5.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #222;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #4f8cff;
+    color: #fff;
+    padding: 2rem 0 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation styles */
+nav {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 1rem;
+    color: #4f8cff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #1a237e;
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+    padding: 2rem 2.5rem;
+}
+
+h2 {
+    color: #4f8cff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: disc inside;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Button styles */
+button, .btn {
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+}
+
+button:hover, .btn:hover {
+    background: #1a237e;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #e3eafc;
+    color: #4f8cff;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-radius: 0 0 16px 16px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    main {
+        padding: 1rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Bold table font on hover */
+table td:hover, table th:hover {
+    font-weight: bold;
+    transition: font-weight 0.2s ease;
+}
