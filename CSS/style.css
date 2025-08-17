@@ -15,6 +15,11 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    color: cyan;
+    color: goldenrod;
+}
+div {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
