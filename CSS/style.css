@@ -32,7 +32,7 @@ div {
 }
 
 
-div:hover {
+.project:hover {
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
     transform: translateY(-8px);
 }
