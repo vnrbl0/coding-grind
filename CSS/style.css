@@ -77,3 +77,19 @@ h3{
     text-align: center;
 }
 /* Removed invalid selector and property */
+footer {
+    background-color: #781791;
+    color: #ffd700;
+    text-align: center;
+    padding: 1px 0;
+    font-size: 1.15rem;
+    font-family: 'Segoe UI', 'Fira Sans', 'Roboto', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    height: auto;
+    position: static;
+    width: 100%;
+}
+
+.fp{
+    color: rgb(224, 217, 217);
+}
