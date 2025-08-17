@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id & Classes in HTML</title>
+    <link rel="stylesheet" href="../CSS/style6.css">
+</head>
+
+<body>
+    <h2>Difference between <code>id</code> and <code>class</code> in HTML</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Feature</th>
+            <th>id</th>
+            <th>class</th>
+        </tr>
+        <tr>
+            <td>Uniqueness</td>
+            <td>Must be unique within a page</td>
+            <td>Can be used on multiple elements</td>
+        </tr>
+        <tr>
+            <td>Selector in CSS</td>
+            <td><code>#idname</code></td>
+            <td><code>.classname</code></td>
+        </tr>
+        <tr>
+            <td>Usage</td>
+            <td>Identify a single element</td>
+            <td>Group multiple elements</td>
+        </tr>
+        <tr>
+            <td>JavaScript Access</td>
+            <td><code>getElementById()</code></td>
+            <td><code>getElementsByClassName()</code></td>
+        </tr>
+    </table>
+
+    <h3>Examples</h3>
+    <p><strong>Using <code>id</code>:</strong></p>
+    <pre>
+    &lt;div id="unique-element"&gt;This is a unique element&lt;/div&gt;
+    </pre>
+    <div id="unique-element" style="background: #e0f7fa; padding: 8px; margin-bottom: 10px;">
+        This is a unique element
+    </div>
+
+    <p><strong>Using <code>class</code>:</strong></p>
+    <pre>
+    &lt;div class="grouped-element"&gt;Element 1&lt;/div&gt;
+    &lt;div class="grouped-element"&gt;Element 2&lt;/div&gt;
+    </pre>
+    <div class="grouped-element" style="background: #ffe0b2; padding: 8px; margin-bottom: 5px;">
+        Element 1
+    </div>
+    <div class="grouped-element" style="background: #ffe0b2; padding: 8px;">
+        Element 2
+    </div>
+
+    <h3>Complex Examples</h3>
+    <p><strong>Combining <code>id</code> and <code>class</code> with CSS:</strong></p>
+    <pre>
+    &lt;style&gt;
+      #special { color: white; background: #8e24aa; }
+      .highlight { font-weight: bold; background: #c8e6c9; }
+    &lt;/style&gt;
+    &lt;p id="special" class="highlight"&gt;This paragraph uses both id and class.&lt;/p&gt;
+    </pre>
+    <style>
+        #special {
+            color: white;
+            background: #8e24aa;
+        }
+
+        .highlight {
+            font-weight: bold;
+            background: #c8e6c9;
+        }
+    </style>
+    <p id="special" class="highlight">This paragraph uses both id and class.</p>
+
+    <p><strong>JavaScript Example:</strong></p>
+    <pre>
+    &lt;button id="btn"&gt;Click Me&lt;/button&gt;
+    &lt;div class="msg"&gt;Message 1&lt;/div&gt;
+    &lt;div class="msg"&gt;Message 2&lt;/div&gt;
+    &lt;script&gt;
+      document.getElementById('btn').onclick = function() {
+        var msgs = document.getElementsByClassName('msg');
+        for (var i = 0; i &lt; msgs.length; i++) {
+          msgs[i].style.background = '#ffccbc';
+        }
+      }
+    &lt;/script&gt;
+    </pre>
+    <button id="btn">Click Me</button>
+    <div class="msg" style="padding:6px; margin:4px 0; background:#f5f5f5;">Message 1</div>
+    <div class="msg" style="padding:6px; margin:4px 0; background:#f5f5f5;">Message 2</div>
+    <script>
+        document.getElementById('btn').onclick = function () {
+            var msgs = document.getElementsByClassName('msg');
+            for (var i = 0; i < msgs.length; i++) {
+                msgs[i].style.background = '#ffccbc';
+            }
+        }
+    </script>
+</body>
+
+</html>
