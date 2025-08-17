@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms and input tags in HTML</title>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Forms and Input Tags in HTML</h1>
+        <p>This page demonstrates the use of various input tags in HTML forms.</p>
+    </div>
+    <div>
+
+        <form action="#" method="post">
+            <label for="First Name">First Name:</label>
+            <input type="text" id="First Name" name="First Name" placeholder="Enter your first name" required>
+            <br>
+            <label for="Last Name">Last Name:</label>
+            <input type="tesxt" id="Last Name" name="Last Name" placeholder="Enter your last name" required>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">female</label>
+    </div>
+    <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <br>
+        <label for="fileupload">Upload you Citizenship: </label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <br>
+        <input type="hidden" id="hiddenField" name="hiddenField" value="hiddenValue">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br>
+        <label for="volume">Volume:</label>
+        <input type="range" name="1" id="volumme" min="0" max="100" value="50">
+    </div>
+    <div>
+        <label for="website">Enter you Site URL:</label>
+        <input type="url" id="website" name="website" placeholder="Enter your website URL">
+    </div>
 </body>
+
 </html>

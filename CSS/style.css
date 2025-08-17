@@ -1,17 +1,20 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:goldenrod;
+    background-color: goldenrod;
 }
 
 h2 {
     text-align: center;
     color: white;
 }
+
 a {
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
+    color: cyan;
 }
