@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: goldenrod;
+    grid: 2fr 1fr / 1fr;
 }
 
 h2 {
@@ -19,11 +20,10 @@ a {
 }
 
 a:hover {
-    color: rgb(172, 180, 12);
+    color: rgb(236, 236, 236);
 }
 
-div {
-
+.hprojects {
     width: 400px;
     height: auto;
     margin: 7px;
@@ -36,21 +36,29 @@ div {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
-
-div:hover {
+.hprojects:hover {
     /* 
     transform: scale(1.2);      /* Scales the div to 120% of its original size */
-    transform: rotate(10deg);   /* Rotates the div by 10 degrees */
-    transform: translateX(10px);/* Moves the div 10px to the right */
-    transform: translateY(10px);/* Moves the div 10px down */
-    transform: skewX(10deg);    /* Skews the div 10 degrees along the X-axis */
-    transform: skewY(10deg);    /* Skews the div 10 degrees along the Y-axis */
-    transform: scaleX(1.2);     /* Scales the div horizontally by 1.2 */
-    transform: scaleY(1.2);     /* Scales the div vertically by 1.2 */
-    transform: none;            /* Removes any transformation */
+    transform: rotate(10deg);
+    /* Rotates the div by 10 degrees */
+    transform: translateX(10px);
+    /* Moves the div 10px to the right */
+    transform: translateY(10px);
+    /* Moves the div 10px down */
+    transform: skewX(10deg);
+    /* Skews the div 10 degrees along the X-axis */
+    transform: skewY(10deg);
+    /* Skews the div 10 degrees along the Y-axis */
+    transform: scaleX(1.2);
+    /* Scales the div horizontally by 1.2 */
+    transform: scaleY(1.2);
+    /* Scales the div vertically by 1.2 */
+    transform: none;
+    /* Removes any transformation */
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
     transform: scale(1.2);
-    background-color: rgb(206, 201, 201);
+    background-color: #c70808;
+    color: white;
 }
 
 .project {
@@ -61,7 +69,7 @@ div:hover {
     justify-content: center;
 }
 
-p{
+p {
     font-family: 'Segoe UI', 'Fira Sans', 'Roboto', Arial, sans-serif;
     color: #333;
     font-size: 1.1rem;
@@ -73,9 +81,10 @@ p{
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
 }
+
 /* Removed invalid selector and property */
 footer {
     background-color: #781791;
@@ -90,6 +99,41 @@ footer {
     width: 100%;
 }
 
-.fp{
+.fp {
     color: rgb(224, 217, 217);
+}
+
+.lhead {
+    color: white;
+    width: 400px;
+    height: auto;
+    margin: 7px;
+    padding: 10px;
+    background-color: #c70808;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(4, 104, 117, 0.9);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+.lhead:hover {
+    color: #c70808;
+    box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
+    transform: scale(1.2);
+    background-color: white;
+}
+
+.hprojects {
+    display: grid;
+    flex-direction: column;
+}
+.hprojects a {
+    color: #030101;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hprojects a:hover{
+    color: #fff;
 }
