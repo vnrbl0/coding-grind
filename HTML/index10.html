@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entities, Code tag and more on HTML</title>
+    <style>
+        .terminal {
+            background-color: #1e1e1e;
+            /* dark background */
+            color: #00ff00;
+            /* green text */
+            font-family: monospace;
+            /* terminal font */
+            padding: 8px;
+            border-radius: 8px;
+            white-space: pre;
+            /* preserve formatting */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="defination">
+        <h3>Definition of HTML Entities</h3>
+        <p>HTML entities are special codes used in HTML to display reserved characters (like <,>, &) or characters that
+                are
+                not present on the keyboard (like ©, ®, €).</p>
+        <p>
+            They usually start with an ampersand (&) and end with a semicolon (;).
+            This is necessary because some characters are reserved in HTML and cannot be written directly (for example <
+                is used for HTML tags). </p>
+    </div>
+    <div class="entities">
+        <h3>Common HTML Entities</h3>
+        <ul>
+            <li><span>&</span>amp; - Ampersand (&)</li>
+            <li><span>&</span>lt; - Less than (<)< /li>
+            <li><span>&</span>gt; - Greater than (>)</li>
+            <li><span>&</span>quot; - Double quote (")</li>
+            <li><span>&</span>#39; - Single quote (')</li>
+            <li><span>&</span>copy; - Copyright ©</li>
+            <li><span>&</span>reg; - Registered ®</li>
+            <li><span>&</span>euro; - Euro €</li>
+        </ul>
+    </div>
+    <div class="terminal">
+        <h3>Input</h3>
+        &ltp>5 <span>&</span>lt; 10 <span>&</span>amp; 20 <span>&</span>gt; 15&lt/p>
+        &ltp>Copyright <span>&</span>copy; 2025 &lt/p>
+    </div>
+    <br>
+    <div class="terminal">
+        <h3>Output</h3>
+        <p>5 &lt; 10 &amp; 20 &gt; 15</p>
+        <p>Copyright &copy; 2025</p>
+    </div>
+    <div class="code">
+        <h3>Using the Code Tag</h3>
+        <p>The <code>&lt;code&gt;</code> tag is used to display code snippets in HTML. It is typically used to show
+            programming code or other technical content.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+        </div>
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Code Example&lt;/title&gt;     
+        &lt;/head&gt;
+        &lt;body&gt;    
+            &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;p&gt;This is a simple HTML document.&lt;/p&gt;  
+        &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
+    </div>
+    <div class="note">
+        <h3>Note</h3>
+        <p>When using the <code>&lt;code&gt;</code> tag, it is important to escape any HTML characters within the code
+            snippet to prevent them from being interpreted as HTML.</p>
+        <p>For example, use <code>&amp;lt;</code> for <code>&lt;</code> and <code>&amp;gt;</code> for <code>&gt;</code>.</p>
+    </div>
 </body>
+
 </html>
