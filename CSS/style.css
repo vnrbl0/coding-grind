@@ -19,10 +19,10 @@ a:hover {
 }
 
 div {
- 
+
     width: 50%;
     height: auto;
-    margin: 10px;
+    margin: 7px;
     padding: 10px;
     background-color: rgb(233, 229, 229);
     border-radius: 10px;
@@ -32,14 +32,15 @@ div {
 }
 
 
-.project:hover {
+div:hover {
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 }
+
 .project {
-margin: 40px auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
