@@ -27,13 +27,11 @@ div {
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(4, 104, 117, 0.9);
-}
-
-div {
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
+
 div:hover {
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 }
