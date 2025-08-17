@@ -24,12 +24,13 @@ a:hover {
 
 div {
 
-    width: 300px;
+    width: 400px;
     height: auto;
     margin: 7px;
     padding: 10px;
     background-color: rgb(233, 229, 229);
     border-radius: 10px;
+    cursor: pointer;
     text-align: center;
     box-shadow: 0 2px 5px rgba(4, 104, 117, 0.9);
     transition: box-shadow 0.3s, transform 0.3s;
@@ -47,7 +48,6 @@ div:hover {
     transform: scaleX(1.2);     /* Scales the div horizontally by 1.2 */
     transform: scaleY(1.2);     /* Scales the div vertically by 1.2 */
     transform: none;            /* Removes any transformation */
-    */
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
     transform: scale(1.2);
     background-color: rgb(206, 201, 201);
@@ -71,3 +71,5 @@ p{
     text-shadow: 0 1px 2px #fff6;
     font-weight: bold;
 }
+
+/* Removed invalid selector and property */
