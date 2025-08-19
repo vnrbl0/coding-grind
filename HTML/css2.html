@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Box Model - Margin, Padding & Borders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .box1 {
+            /* border: 2px solid green; */
+            /* margin is gap ussed to create space outside the border. */
+            margin: 20px;
+            /* padding is gap used to create space inside the border. */
+            padding: 10px;
+        }
+
+        .box2 {
+            background-color: blue;
+            margin: 20px;
+            padding: 10px;
+            /* border: 2px solid red; */
+        }
+
+        .box:hover {
+            outline: 2px dashed green;
+            background-color: white;
+            color: black;
+            transform: scale(0.97);
+            /* transition is used to create smooth transition effect. */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border-radius: 7px;
+
+        }
+
+        .box3 {
+            background-color: red;
+            margin: 20px;
+            padding: 10px;
+            height: auto;
+            box-sizing: border-box;
+            /* box-sizing: border-box; makes the width and height include padding and border. */
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .box4 {
+            background-color: green;
+            margin: 20px;
+            padding: 10px;
+            height: auto;
+            box-sizing: content-box;
+            /* box-sizing: content-box; makes the width and height of the box. */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="box box1">
+        I am a box with margin, padding, and border.
+    </div>
+    <div class="box box2">
+        I am a box with margin, padding, and border.
+    </div>
+    <div class="box box3">
+        <p>
+            I am a box with margin, padding, and border. <br>
+            <strong>box-sizing: border-box;</strong> makes the width and height include padding and border.
+        </p>
+        <p>Content box make the height and width of the box.</p>
+        <p>You can click <a href="https://miro.medium.com/v2/resize:fit:880/1*08DnApeCVZ9QwaxgOrzGkA.jpeg">this
+                link</a>to see image example.</p>
+    </div>
+    <div class="box box4">
+        <p>
+            margin collapse is a behavior in CSS where the vertical margins of adjacent block-level elements collapse
+            into a single margin.
+        </p>
+        <p>You can click <a href="https://ishadeed.com/assets/spacing-css/margin-collapse.png">this link </a>to see
+            image example.</p>
+    </div>
 </body>
+
 </html>
