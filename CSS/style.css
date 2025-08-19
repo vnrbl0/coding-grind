@@ -129,11 +129,46 @@ footer {
     display: grid;
     flex-direction: column;
 }
+
 .hprojects a {
     color: #030101;
     font-weight: bold;
     text-decoration: none;
 }
-.hprojects a:hover{
+
+.hprojects a:hover {
     color: #fff;
 }
+
+.cssprojects {
+    width: 400px;
+    height: auto;
+    display: grid;
+    margin: 1px;
+    padding: 10px;
+    background-color: rgb(233, 229, 229);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(4, 104, 117, 0.9);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.cssprojects a {
+    color: #030101;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.cssprojects:hover {
+    box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
+    transform: scale(1.2);
+    background-color: #c70808;
+    color: white;
+}
+
+.cssprojects a:hover {
+    color: #fff;
+}
+
