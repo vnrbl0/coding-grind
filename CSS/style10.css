@@ -1,0 +1,60 @@
+ * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .box1 {
+            /* border: 2px solid green; */
+            /* margin is gap ussed to create space outside the border. */
+            margin: 20px;
+            /* padding is gap used to create space inside the border. */
+            padding: 10px;
+        }
+
+        .box2 {
+            background-color: blue;
+            margin: 20px;
+            padding: 10px;
+            /* border: 2px solid red; */
+        }
+
+        .box:hover {
+            outline: 2px dashed green;
+            background-color: white;
+            color: black;
+            transform: scale(0.97);
+            /* transition is used to create smooth transition effect. */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border-radius: 7px;
+
+        }
+
+        .box3 {
+            background-color: red;
+            margin: 20px;
+            padding: 10px;
+            height: auto;
+            box-sizing: border-box;
+            /* box-sizing: border-box; makes the width and height include padding and border. */
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .box4 {
+            background-color: green;
+            margin: 20px;
+            padding: 10px;
+            height: auto;
+            box-sizing: content-box;
+            /* box-sizing: content-box; makes the width and height of the box. */
+        }
