@@ -39,6 +39,7 @@
     background-color:red ;
     padding: 5px;
     border-radius: 5px ;
+    line-height: 32px;
  }
 
  h3 > a:hover{
