@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: goldenrod;
+    background-color: rgb(194, 160, 99);
 }
 
 h2 {
@@ -22,8 +22,22 @@ a:hover {
     color: rgb(236, 236, 236);
 }
 
+.htmlprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .hprojects {
-    width: 400px;
+    flex: 0 1 400px;
     height: auto;
     margin: 7px;
     padding: 10px;
@@ -55,7 +69,7 @@ a:hover {
     transform: none;
     /* Removes any transformation */
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
-    transform: scale(1.2);
+    transform: scale(1.04);
     background-color: #c70808;
     color: white;
 }
@@ -103,8 +117,9 @@ footer {
 }
 
 .lhead {
+    display: block;
     color: white;
-    width: 400px;
+    width: 250px;
     height: auto;
     margin: 7px;
     padding: 10px;
@@ -120,8 +135,9 @@ footer {
 .lhead:hover {
     color: #c70808;
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
-    transform: scale(1.2);
+    transform: scale(1.04);
     background-color: white;
+    border: 2px dashed red;
 }
 
 .hprojects {
@@ -140,10 +156,9 @@ footer {
 }
 
 .cssprojects {
-    width: 400px;
+    flex: 0 1 400px;
     height: auto;
-    display: grid;
-    margin: 4px;
+    margin: 7px;
     padding: 10px;
     background-color: rgb(233, 229, 229);
     border-radius: 10px;
@@ -158,17 +173,21 @@ footer {
     font-weight: bold;
     text-decoration: none;
     font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .cssprojects:hover {
     box-shadow: 0 4px 10px rgba(4, 104, 117, 0.9);
-    transform: scale(1.2);
+    transform: scale(1.04);
     background-color: #c70808;
-    color: white;
 }
 
-.cssprojects a:hover {
-    color: #fff;
+.cprojects a:hover {
+    color: #ffffff;
 }
 
 .github {
@@ -181,9 +200,9 @@ footer {
 .github:hover {
     transform: scale(1.2);
     transition: transform 0.3s;
-    
+
 }
 
 .fr3 {
-  color: #fff;
+    color: #fff;
 }
