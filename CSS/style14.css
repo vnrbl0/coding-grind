@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ body{
+    background-color: wheat;
+ }
+.box{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 200px;
+    padding: 20px;
+    margin: 15px;
+}
+ .box1 {
+    background-color: red;
+    /* visibility: hidden ; only hide the visibility but left the area that covoers */
+ }
+
+ .box3{
+    background-color: green;
+    /* display: none ; makes display and area that covers null/empty */
+
+ }
+
+ .page{
+    margin: 10px 33px;
+    padding: 15px 30px;
+ }
+
+ h3 > a{
+    text-decoration: none;
+    color: wheat;
+    background-color:red ;
+    padding: 5px;
+    border-radius: 5px ;
+ }
+
+ h3 > a:hover{
+    background-color: wheat;
+    color: red;
+    border: 2px dashed red;
+ }
