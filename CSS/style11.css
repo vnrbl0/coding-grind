@@ -1,0 +1,56 @@
+h1 {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    font-family: rubik, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #666;
+    /* letter height means giving space between lines */
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: nunito, sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #444;
+    /* letter spacing means giving space between letters */
+    letter-spacing: 0.4rem ;
+}
+
+h2:hover {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+
+    /* text decoration color means changing the color of the underline */
+    text-decoration-color:green;
+    /* text decoration thickness means changing the thickness of the underline */
+    text-decoration-thickness: 3px;
+    /* text decoration means changing the style of the underline  */
+    /* text-decoration-style: solid; */
+    /* text-decoration-style: dashed; */
+}
+
+.lorem{
+    background-color: gold;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    height: 150px;
+    overflow: scroll;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+.lorem:hover {
+    background-color: rgb(224, 224, 217);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 2px dashed green;
+    color: green;
+}
