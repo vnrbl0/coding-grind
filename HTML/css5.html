@@ -10,7 +10,9 @@
             font-family: poppins, sans-serif;
             margin: 0;  
             padding: 20px;
+            line-height: 1.5rem;
         }
+
         a{
             color: #007bff;
             text-decoration: none;
@@ -32,6 +34,51 @@
     </ul>
     <p>When multiple rules apply to the same element, the rule with the highest specificity will be applied. If two rules have the same specificity, the one that appears last in the CSS will take precedence.</p>
     <p>Understanding specificity is crucial for writing effective CSS and avoiding conflicts between styles.</p>
+
+    <h1>Cascade Calculation </h1>
+    <p>The CSS cascade is the process by which styles are applied to elements based on their specificity and source order. The cascade takes into account the following factors:</p>
+    <ul>
+        <li>Importance: Styles marked with !important will override all other styles.</li>
+        <li>Specificity: More specific selectors will override less specific ones.</li>
+        <li>Source order: If two rules have the same specificity, the one that appears later in the CSS will be applied.</li>
+        <li>Origin: Styles can come from different sources, such as user agent styles, user styles, author styles, and inline styles. Author styles have the highest priority.</li>
+    </ul>
+    <p>Understanding the cascade is essential for managing styles effectively and ensuring that your CSS behaves as expected.</p>
+    <h2>Cascade Values in numbers</h2>
+    <p>Specificity is calculated using a four-part value:</p>
+    <ul>
+        <li>Inline styles: 1,0,0,0</li>
+        <li>ID selectors: 0,1,0,0</li>
+        <li>Class selectors, attributes, and pseudo-classes: 0,0,1,0</li>
+        <li>Type selectors and pseudo-elements: 0,0,0,1</li>
+        <li>Universal selector: 0,0,0,0</li>
+    </ul>
+    <p>For example, if you have a rule with an ID selector and a class selector, the specificity would be calculated as follows:</p>
+    <p>ID selector: 0,1,0,0 + Class selector: 0,0,1,0 = 0,1,1,0</p>
+
+    <h2>The specify value of each selectors</h2>
+    <li>Universal selectors : 0</li>
+    <li>Type selectors : 1</li>
+    <li>Class selectors : 10</li>
+    <li>ID selectors : 100</li>
+    <li>Inline styles : 1000</li>
+    <p>Understanding these values helps you predict which styles will be applied to an element based on the specificity of the selectors used.</p>
+    <h2>Practical Example</h2>  
+    <p>Consider the following CSS rules:</p>
+    <pre>
+        .example {
+            color: blue; /* Specificity: 0,0,1,0 */
+        }
+        #example {
+            color: red; /* Specificity: 0,1,0,0 */
+        }
+        div {
+            color: green; /* Specificity: 0,0,0,1 */
+        }
+        <span style="color: orange;">Inline style</span> /* Specificity: 1,0,0,0 */
+    </pre>
+    <p>In this case, the inline style will take precedence over the ID selector, which will take precedence over the class selector, and finally the type selector. The final color of the element will be orange.</p>
+
     <p>For more detailed information, you can refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">MDN Web Docs on CSS Specificity</a>.</p>      
     <p>To see how specificity works in practice, you can check out the <a href="https://specificity.keegan.st/" target="_blank">Specificity Calculator</a>.</p>
     <p>Remember, specificity is all about understanding how CSS rules are applied and ensuring that your styles are predictable and maintainable.</p>
