@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5rem;
+    margin: 10px 50px ;
+    padding: 30px;
+    background-color: wheat;
+}
+
+.content{
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 1px 15px 20px black;
+}
