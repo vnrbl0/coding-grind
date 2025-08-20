@@ -43,6 +43,7 @@ h2:hover {
     border-radius: 10px;
     margin: 20px 0;
     height: 150px;
+    width: 500px;
     overflow: scroll;
     overflow-wrap: break-word;
     box-sizing: border-box;
@@ -50,7 +51,6 @@ h2:hover {
 }
 .lorem:hover {
     background-color: rgb(224, 224, 217);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     border: 2px dashed green;
     color: green;
 }
