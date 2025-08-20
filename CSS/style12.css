@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 22px;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgb(192, 192, 192);
+}
+
+div:hover {
+    border: 2px dashed red;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+p:nth-child(1) {
+    background-color: yellow;
+    color: red;
+
+}
+
+div p:nth-child(2) {
+    background-color: blue;
+    color: white;
+
+}
+
+div p:nth-child(3) {
+    background-color: green;
+    color: black;
+}
